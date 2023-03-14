@@ -1,0 +1,85 @@
+:root {
+  --color-primary: #3b3d49;
+  --color-btn: #fff;
+  --color-secondary: #7d7e7a;
+  --color-accent: #c71c36;
+  --color-c: #576059;
+  --shadow-vertical: 4px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.calculator {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 270px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--color-primary);
+  box-shadow: 0px var(--shadow-vertical) var(--color-accent);
+}
+
+.btn {
+  border: 0;
+  border-radius: 5px;
+  /* border: 1px solid blue; */
+  /* padding: 1rem 2.3rem; */
+  font-weight: 600;
+}
+
+.btn--c {
+  background-color: var(--color-c);
+  color: var(--color-btn);
+  padding: 1rem 2.5rem;
+}
+
+.btn--num {
+  background-color: var(--color-btn);
+  color: var(--color-secondary);
+  box-shadow: 0 var(--shadow-vertical) var(--color-secondary);
+}
+
+.input {
+  background-color: var(--color-secondary);
+  box-shadow: 0px -4px var(--color-accent);
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  padding: 1rem 1rem;
+}
+
+.numbers {
+  display: grid;
+  grid-template: repeat(4, 30px) / repeat(4, 45px);
+  gap: 20px 10px;
+  justify-content: center;
+
+  /* align-content: center; */
+}
+
+.wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.selected {
+  background-color: var(--color-accent);
+  color: var(--color-btn);
+}
